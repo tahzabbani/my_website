@@ -1,58 +1,143 @@
 <!DOCTYPE html>
 <html>
-<link href="style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Enriqueta|Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tahseen Robbani</title>
 </head>
 
 <body>
-    <h1>Tahseen Robbani</h1>
-    <div class="me" style="background-image: url( './images/IMG_5492.JPG')"></div>
-    <div class="about">
-        <h2>About Me</h2>
-        <p>Currently, I am a junior at UAB studying Computer Science with minors in Mathematics and Information Systems. <br/>I made this website because I wanted to have all my stuff in one place. </p>
-        <p>I enjoy:</p>
-        <ul>
-            <li>video games</li>
-            <li>fostering kittens</li>
-            <li>basketball</li>
-            <li>coding</li>
-            <li>sleeping</li>
-            <li>trying new foods</li>
-            <li>I'll add more to this list later I guess</li>
-        </ul>
-    </div>
-    <div class="projects">
-        <h2>Some Projects</h2>
-        <ul>
-            <li><a href="https://tahzabbani.github.io/calculator/" target="_blank">Calculator GUI</a></li>
-            <li><a href="https://tahzabbani.github.io/etch_a_sketch/src" target="_blank">Etch-A-Sketch</a></li>
-            <li><a href="https://github.com/tahzabbani/simple_shell" target="_blank">Simple Shell</a></li>
-            <li><a href="http://blockboy.tahzabbani.xyz/" target="_blank">Block Boy</a></li>
-        </ul>
-    </div>
-    <div class="links">
-        <h2>Other Links</h2>
-        <ul>
-            <li><a href="https://github.com/tahzabbani" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/tahseenrobbani//" target="_blank">LinkedIn</a></li>
-            <li><a href="./files/ResumeOfficialPDF.pdf" target="_blank">Résumé</a></li>
-        </ul>
-    </div>
-    <h2>Foster Kitten Log</h2>
-    <div id="cats">
-        <div id="pics" style="background-image: url( './images/IMG_4303.JPG')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_5581.JPG')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_5959.png')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_7424.jpg')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_7909.jpg')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_8615.jpg')"></div>
-        <div id="pics" style="background-image: url( './images/IMG_9751.jpg')"></div>
+    <div class="overflow-wrapper">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+                        <a class="navbar-brand" href="#">TR</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
 
+                            <li><a href="#about-page-container">About</a></li>
+                            <li><a href="#projects-container">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="photos.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main-title-container text-center animate-left-onload">
+            <div class="inner-title-container">
+                <div class="main-title">
+                    <h1 class="main-header ">Hi. I'm <br> Tahseen Robbani</h1>
+                    <p class="title-description ">
+                        Computer Science student with an interest in full-stack development <br> (but not entirely proficient yet)
+                    </p>
+                    <p class="date"></p>
+                    <p class="time"></p>
+                </div>
+            </div>
+        </div>
+        <div id="about-page-container" class="animate-fade">
+            <div class="about-paragraph-container">
+                <h2>About Me</h2>
+                <p class="about-description ">
+                    I am a senior at the University of Alabama at Birmingham studying Computer Science who also has an interest in video games, food, and especially cats. I am a foster parent for the Greater Birmingham Humane Society and always bring home the best kittens
+                    which you can see in the <a class="underline" href="photos.html ">photo gallery</a>. <br> <br>During my free time, I'm sometimes relaxing (or getting frustrated) by playing games such as League of Legends, Valorant,
+                    or Super Smash Bros. I also like to work on some random projects that I post onto my
+                    <a class="underline" href="https://github.com/tahzabbani " target="_blank ">GitHub</a> to improve my coding skills and slowly get closer to my end goal of becoming a great developer.
+                </p>
+            </div>
+            <div class="pic-me-container ">
+                <img class="about-pic " src="./images/tash-coffee.jpg " alt="A picture of me ">
+            </div>
+        </div>
+        <div id="projects-container" class="text-center">
+            <h2>Projects</h2>
+            <p>Here are a couple of links to projects I have previously worked on:</p>
+            <div class="project-links animate-fade">
+                <div class="project-row text-center ">
+                    <div class="project-col ">
+                        <a href="https://tahzabbani.github.io/calculator/ " target="_blank ">
+                            <img src="./images/calculatorscreen.png " alt="Screenshot of my calculator project ">
+                        </a>
+                        <p>Calculator GUI</p>
+                    </div>
+                    <div class="project-col ">
+                        <a href="https://tahzabbani.github.io/etch_a_sketch/src " target="_blank ">
+                            <img src="./images/etchsketch.png " alt="Screenshot of my etch-a-sketch project ">
+                        </a>
+                        <p>Etch-a-sketch</p>
+                    </div>
+                    <div class="project-col ">
+                        <a href="http://blockboy.tahzabbani.xyz/ " target="_blank ">
+                            <img src="./images/blockboy.png " alt="Screenshot of my Block Boy game ">
+                        </a>
+                        <p>Block Boy</p>
+                    </div>
+                </div>
+                <div class="project-row text-center ">
+                    <div class="project-col-2 ">
+                        <a href="https://github.com/tahzabbani/simple_shell " target="_blank ">
+                            <img src="./images/shell.png " alt="Screenshot of my project running in the terminal ">
+                        </a>
+                        <p>Simple Shell</p>
+                    </div>
+                    <div class="project-col-2 ">
+                        <a href="https://github.com/tahzabbani/discord_bot " target="_blank ">
+                            <img src="./images/discordbot.png " alt="Screenshot of my Discord bot running in discord ">
+                        </a>
+                        <p>Discord Bot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="haiku-generator-container text-center animate-fade">
+            <h2>Haiku Generator</h2>
+            <p>Generates a haiku with some preset phrases put together <br> Maybe you'll get something that makes sense!</p>
+            <div class="haiku-container">
+                <div class="lines-container">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+            <div class="text-center">
+                <button name="haiku" class="haiku-button">Generate</button>
+            </div>
+        </div>
+        <footer class="footer-container ">
+            <div class="footer-head-desc-container text-center ">
+                <div class="footer-desc-wrap ">
+                    <h3 class="footer-head ">Tahseen Robbani</h3>
+                    <p class="footer-head-desc ">If you have any inquiries (or you wanna hire me), you can reach me here
+                        <br> tarobbani@gmail.com
+                        <br> 256.479.5800
+                        <br> or through the <a class="underline" href="contact.html ">contact form</a></p>
+                </div>
+            </div>
+            <ul class="footer-links text-center ">
+                <li><a href="https://github.com/tahzabbani " target="_blank ">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/tahseenrobbani// " target="_blank ">LinkedIn</a></li>
+                <li><a href="./files/ResumeOfficialPDF.pdf " target="_blank ">Résumé</a></li>
+                <li><a href="https://www.instagram.com/tahzabbani/ " target="_blank ">Instagram</a></li>
+            </ul>
+        </footer>
     </div>
+    <script src='./scripts/mobile_menu.js'></script>
+    <script src="./scripts/page_effects.js"></script>
+    <script src="./scripts/haiku_generator.js"></script>
 
 </body>
 

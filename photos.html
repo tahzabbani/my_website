@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+</head>
+
+<body>
+    <!-- overlay for the opacity drop when using lightbox -->
+    <div class="overlay">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+                        <a class="navbar-brand" href="#">TR</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+
+                            <li><a href="index.html#about-page-container">About</a></li>
+                            <li><a href="index.html#projects-container">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="photo-header text-center ">
+            <h1>Foster Cat Photo Gallery</h1>
+            <p>This is a collection of all the cats I have taken care of ever since I started fostering. <br> If you love animals and want to help shelters then contact your local shelter and see if they have a fostering program. <br> <br> I've included
+                descriptions of each cat and a rating.</p>
+        </div>
+        <div class="gallery-container text-center">
+            <div class="picture-row text-center animate-fade">
+                <figure class="picture-elem ">
+                    <img class="catpic" src="./images/smartiesstarburst.JPG " alt="smarties and starburst (kittens) sitting on my chest " onclick="openLightbox();currentSlide(1)">
+                    <figcaption><strong>Smarties and Starburst</strong> <br> August 2018 <br>
+                        <br> Smarties (right) and Starburst (left) were my first kittens I had ever fostered. Smarties is a girl and Starburst is a boy and both were grey-ish tabbies. They were both very sweet and were the reason I continued fostering
+                        after a month of keeping them in my apartment. <br> <br> Rating: 13/10 </figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/caitlyn.jpg " alt="Caitlyn the tortoise cat laying down on a chair " onclick="openLightbox();currentSlide(2)">
+                    <figcaption><strong>Caitlyn</strong> <br> October 2018 <br> <br> I was asked to take care of someone's cats while they were away for a month and Caitlyn was one of them. She was around 2 years old and was very friendly and never scratched or bit.
+                        She would sit on your chest if you slept and it kind of hurt. <br> <br> Rating: 12/10</figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/evelyn.jpg " alt="Evelyn, a white cat sitting on a bed " onclick="openLightbox();currentSlide(3)">
+                    <figcaption><strong>Evelyn</strong> <br> October 2018 <br> <br> Evelyn is the other cat that was with Caitlyn. They were both equally sweet. She would also sleep on your chest and when you woke up she would knead on your stomach (which also kind
+                        of hurt because of her claws - but it was unintentional). She was a really pretty cat. <br> <br> Rating: 12/10
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="picture-row text-center ">
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/greylee.JPG " alt="Greylee - a grey kitten sitting on a person 's lap" onclick="openLightbox();currentSlide(4)">
+                    <figcaption><strong>Greylee</strong> <br> January 2019 <br> <br> Greylee was a really well-behaved little grey kitten. Sadly, I only had her for a week before she gained enough weight to get spayed and given back to the shelter. She loved to sit
+                        in my lap while I played video games. <br> <br> Rating: 14/10</figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/chipmoo.JPG " alt="Chip and Moo - two kittens sitting in a bathroom" onclick="openLightbox();currentSlide(5)">
+                    <figcaption><strong>Chip and Moo</strong> <br> February 2019 <br> <br> Chip (front) and Moo (back) were two of the most scared kittens I had ever fostered. I had them for about two weeks. Chip became more comfortable near the end of their time
+                        here, but Moo was sadly still very skittish. I hope she is doing great right now. <br> <br> Rating: 13/10</figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/ajjazzy.jpg " alt="AJ and Jazz - two kittens sitting on top of each other " onclick="openLightbox();currentSlide(6)">
+                    <figcaption><strong>AJ and Jazzy</strong> <br> April 2019 <br> <br> AJ (top) and Jazzy (bottom) were very energetic, fun, and talkative kittens. They'd have a lot of adorable moments where they would be sleeping on top of each other, or they would
+                        have a lot of moments where they are on the walls of their playpen screaming to get out. They were super playful with their toys and were great fosters. <br> <br> Rating: 14/10</figcaption>
+                </figure>
+            </div>
+            <div class="picture-row text-center ">
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/elviskaty.jpg " alt="Elvis and Katy - two kittens sitting on the ground " onclick="openLightbox();currentSlide(7)">
+                    <figcaption><strong>Elvis and Katy</strong> <br> July 2019 <br> <br> Elvis Purrsley (left) and Katy Purry (right) were a special pair of kittens. Unfortunately, they were both very sick kittens with eye infections and herpes. They were given medicine
+                        everyday and they both slept all them time because of their sicknesses - it was tough to watch. Their infections got worse so I had to give them back to the humane society so the vets could look at them. <br> <br> Rating: 15/10
+                    </figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/leo.jpg " alt="Leo - a black cat sitting on a window sill" onclick="openLightbox();currentSlide(8)">
+                    <figcaption><strong>Leo</strong> <br> August 2019 <br> <br> Leo was another cat I was taking care of for a friend for a few days. He was probably around 6 months old. He loved to sit by the window to bask in the sun and was also very playful (especially
+                        when I was trying to sleep). <br> <br> Rating: 13.5/10 </figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/cheesepuff.jpg " alt="Cheese Puff - an orange kitten in a carrier " onclick="openLightbox();currentSlide(9)">
+                    <figcaption><strong>Cheese Puff</strong> <br> September 2019 <br> <br> Cheese Puff was one of my most noteworthy kittens. I brought him home as he was a very scared kitten but within the next day, he gradually opened up with the use of toys and
+                        patience. He became very loving and playful. I had him for over a month and soon found out that a relative of mine wanted to adopt him. So, I kept him after he got his neutering surgery and went with my relative to the humane society
+                        to have him adopted. I see pictures of him all the time now. <br> <br> Rating: 16/10</figcaption>
+                </figure>
+            </div>
+            <div class="picture-row text-center ">
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/mouse.jpg " alt="Mouse - a 1 year old calico cat sitting in a living room" onclick="openLightbox();currentSlide(10)">
+                    <figcaption><strong>Mouse</strong> <br> April 2020 <br> <br> Mouse was a 1 year old cat that was surrendered by her previous owner. She had been in a hoarding situation so she was very scared and unwilling to trust. Mouse became a little more
+                        comfortable as time passed, but it never got to the point where I was able to touch her. She would only play with toys from a distance which made it difficult when I needed her in a kennel to take to the shelter for check-ups.
+                        I just know that she loved laser pointers. I got a call after a couple weeks into the foster that she was going to get adopted and she is now in her forever home! <br> <br> Rating: 14/10</figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/magneto.jpg " alt="Magneto - a 3 year old orange cat on a window sill " onclick="openLightbox();currentSlide(11)">
+                    <figcaption><strong>Magneto</strong> <br> May 2020 <br> <br> Magneto was a 3 year old cat that was one of the sweetest cats I had ever met. He was also surrendered by his previous owner for dumb reasons. The owners said that he was always chasing
+                        and attacking their family which he did none of when he was with me. He always went to bed at the same time as me and sat in my lap as I was on my computer. And whenever there was a toy out, he would turn into an incredibly playful
+                        cat. I even thought about adopting him myself for a while. About two weeks in, I got a call that he was getting adopted! <br> <br> Rating: 15.6/10</figcaption>
+                </figure>
+                <figure class="picture-elem animate-fade">
+                    <img class="catpic" src="./images/tuna.jpg " alt="Tuna - a black kitten sitting on the ground " onclick="openLightbox();currentSlide(12)">
+                    <figcaption><strong>Tuna</strong> <br> June 2020 <br> <br> Tuna is a little kitten that loves to sleep and nibble on peoples' hands. He had a huge personality and ended up leaving a lot earlier than was expected because he met his weight requirement
+                        so fast. He just ate so much. He also loved to follow me around the apartment and always have me in line of sight. I'm not sure why, but I guess he just liked being close. <br> <br> Rating: 14/10</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox-container text-center">
+        <a class="close-lightbox" onclick="closeLightbox()">&times;</a>
+        <div class="inner-lightbox-container">
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/smartiesstarburst.JPG">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/caitlyn.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/evelyn.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/greylee.JPG ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/chipmoo.JPG">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/ajjazzy.jpg">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/elviskaty.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/leo.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/cheesepuff.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/mouse.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/magneto.jpg ">
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide ">
+                    <img src="./images/tuna.jpg ">
+                </div>
+            </div>
+            <a class="back" onclick="changeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <script src=" http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js "></script>
+    <script src='./scripts/mobile_menu.js'></script>
+    <script src="./scripts/page_effects.js "></script>
+    <script src="./scripts/lightbox.js"></script>
+</body>
+
+</html>

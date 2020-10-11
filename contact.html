@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body class="contact-body">
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+            </button>
+                    <a class="navbar-brand" href="#">TR</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="index.html#about-page-container">About</a></li>
+                        <li><a href="index.html#projects-container">Projects</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                        <li><a href="photos.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contact-head-form-container">
+        <div class="contact-head-container">
+            <h1>Contact Me</h1>
+            <p>Ask me anything you want</p>
+        </div>
+        <div class="contact-container">
+            <form class="form-container" action="submit.php" method="POST">
+                <div class="name-container">
+                    <div class="fname-container">
+                        <label class="fname-label" for="firstname">First Name</label> <br>
+                        <input class="fname-input" type="text" name="firstname" placeholder="Your First Name...">
+                    </div>
+                    <div class="lname-container">
+                        <label class="lname-label" for="lastname">Last Name</label> <br>
+                        <input class="lname-input" type="text" name="lastname" placeholder="Your Last Name...">
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label class="email-label" for="email">E-mail</label> <br>
+                    <input class="email-input" type="text" name="email" placeholder="Your E-mail...">
+                </div>
+                <div class="subject-container">
+                    <label class="subject-label" for="subject">Subject</label> <br>
+                    <input class="subject-input" type="text" name="subject" placeholder="E-mail Subject...">
+                </div>
+                <div class="msg-container">
+                    <label class="msg-label" for="message">Message</label> <br>
+                    <textarea class="msg-input" name="message" placeholder="Write something.."></textarea>
+                </div>
+                <button id="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
