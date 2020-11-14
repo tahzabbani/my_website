@@ -4,7 +4,7 @@ function displayTime() {
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     var year = d.getFullYear(),
-        month = d.getMonth(),
+        month = d.getMonth() + 1,
         day = d.getDate(),
         hours = d.getHours(),
         minutes = d.getMinutes(),
