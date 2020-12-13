@@ -270,12 +270,6 @@
         font-family: 'Inter', sans-serif;
         padding: 10px;
     }
-    /* .fname-label,
-.lname-label,
-.subject-label,
-.email-label {
-padding-bottom: 5px;
-} */
     
     .contact-body {
         text-align: center;
@@ -525,6 +519,10 @@ padding-bottom: 5px;
         .about-pic {
             padding: 10px;
             margin-left: 0;
+        }
+        .animate-fade-onload,
+        .animate-fade {
+            opacity: 1;
         }
         #menu-icon {
             display: inline-block;
