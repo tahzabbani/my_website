@@ -40,10 +40,9 @@
         <div class="contact-head-container">
             <h1>Contact Me</h1>
             <p>Ask me anything you want</p>
-            <p>This is not working yet on my server, so please send me an email instead at tarobbani@gmail.com</p>
         </div>
         <div class="contact-container">
-            <form class="form-container" action="submit.php" method="POST">
+            <form id="form-container">
                 <div class="name-container">
                     <div class="fname-container">
                         <label class="fname-label" for="firstname">First Name</label> <br>
@@ -55,7 +54,7 @@
                     </div>
                 </div>
                 <div class="email-container">
-                    <label class="email-label" for="email">E-mail</label> <br>
+                    <label class="email-label" for="email">E-mail Address</label> <br>
                     <input class="email-input" type="text" name="email" placeholder="Your E-mail...">
                 </div>
                 <div class="subject-container">
@@ -66,10 +65,37 @@
                     <label class="msg-label" for="message">Message</label> <br>
                     <textarea class="msg-input" name="message" placeholder="Write something.."></textarea>
                 </div>
-                <button id="submit" name="submit">Submit</button>
+                <input type="submit" id="submit" name="submit" value="Submit"></input>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_niY15VlEWlCWAHWrmns73");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('form-container').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        alert("Your email was sent!");
+                        location.reload();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Something went wrong with your email... Please contact tarobbani@gmail.com directly instead.");
+                        location.reload();
+
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
